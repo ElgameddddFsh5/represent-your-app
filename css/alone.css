@@ -1,0 +1,512 @@
+/* Global-Co */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/imgs/back.png);
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+}
+.container {
+  padding: 0px 200px 0px 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+header .logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+.container ul li {
+  display: inline-block;
+  margin: 20px 30px;
+}
+.container ul li a {
+  font-weight: 500;
+}
+.container ul li a:hover,
+.active {
+  color: #ff5656;
+}
+
+.intro-text {
+  text-align: center;
+}
+.text {
+  width: 600px;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+.intro-text h1 {
+  margin: 0;
+  color: white;
+  font-size: 50px;
+  padding-bottom: 25px;
+}
+.intro-text p {
+  color: white;
+  padding-bottom: 60px;
+}
+.intro-text span {
+  padding: 15px 45px 15px 45px;
+  margin: 20px;
+  display: inline-block;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.intro-text .act {
+  color: black;
+  background-color: white;
+}
+.intro-text .phone {
+  height: 486px;
+  position: absolute;
+  left: 50%;
+  top: 700px;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.intro-text span:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+.intro-text .act:hover {
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+section .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(/imgs/wave.png);
+  background-size: 1000px 100px;
+  z-index: 4;
+}
+section .wave.wave1 {
+  animation: animate 30s linear infinite;
+  z-index: 100;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+section .wave.wave2 {
+  animation: animate2 15s linear infinite;
+  z-index: 99;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+section .wave.wave3 {
+  animation: animate2 30s linear infinite;
+  z-index: 98;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+section .wave.wave4 {
+  animation: animate2 5s linear infinite;
+  z-index: 97;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+@keyframes animate2 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1000px;
+  }
+}
+
+.cards {
+  position: relative;
+  padding: 60px 0px 60px 0px;
+  height: 100vh;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+.containerr {
+  position: absolute;
+  left: 50%;
+}
+.box {
+  height: 350px;
+  width: 300px;
+  margin: 0px;
+  box-shadow: 0px 14px 15px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.box1 {
+  position: absolute;
+  top: 455px;
+  right: 100px;
+}
+.box2 {
+  position: absolute;
+  left: 370px;
+  top: 115px;
+}
+.box3 {
+  position: absolute;
+  left: 330px;
+  top: 540px;
+}
+
+.containerr i {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  padding: 45px 0px 40px 0px;
+  z-index: 40;
+  color: #40c4fc;
+}
+.containerr h4 {
+  display: flex;
+  justify-content: center;
+  color: #233148;
+  padding-bottom: 20px;
+}
+.containerr p {
+  text-align: center;
+  color: #6a6d89;
+  line-height: 30px;
+  padding: 0px 10px 0px 10px;
+}
+.cards::after {
+  content: url(/imgs/phone.png);
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.th-sec {
+  display: flex;
+  height: 80vh;
+}
+
+.left {
+  width: 40%;
+  height: 50%;
+  text-align: right;
+  margin-left: 10%;
+}
+.left h2 {
+  margin: 60px 0px 60px 0px;
+  font-size: 40px;
+  color: #233148;
+}
+.left p {
+  margin: 60px 0px 35px 0px;
+  color: #6a6d89;
+  line-height: 35px;
+}
+.left span {
+  padding: 20px 50px 20px 50px;
+  display: inline-block;
+  border-radius: 8px;
+  color: white;
+  background-color: #40c4fc;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.right {
+  width: 60%;
+  margin-left: 5%;
+}
+.right .wi-cards {
+  margin: 60px;
+  width: 65%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 14px 15px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+.right .wi-cards p {
+  display: none;
+}
+.right .wi-cards p {
+  color: #6a6d89;
+}
+.right .wi-cards p:hover {
+}
+.right .wi-cards:hover {
+  display: flex;
+  height: 150px;
+  align-items: flex-start;
+  padding: 30px 0px 15px 10px;
+}
+
+.right .wi-cards i {
+  font-size: 30px;
+  padding: 0px 25px 0px 25px;
+  color: #40c4fc;
+}
+.right .wi-cards h4 {
+  color: #233148;
+}
+.code {
+  height: 50vh;
+}
+.contanier {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.right1 {
+  width: 30%;
+  text-align: start;
+  margin-right: 100px;
+  margin-top: 45px;
+}
+.right1 h2 {
+  color: #233148;
+  font-size: 35px;
+  padding-bottom: 35px;
+}
+.right1 h4 {
+  color: #233148;
+  font-size: 18px;
+  padding: 5px 0px 30px 35px;
+}
+/* هنا اخدت ايكون وحطيطها ب استخدام حاجة اسمها 
+unicode
+عشان اقدر احطهال كل العناصر اللي محددهم ب بيفور او افتر
+*/
+.right1 h4::before {
+  position: absolute;
+  content: "\f058";
+  font-family: "Font Awesome 6 Free";
+  margin-left: -35px;
+}
+.right1 p {
+  color: #6a6d89;
+  line-height: 35px;
+}
+.leftt {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 100px;
+}
+.leftt img {
+  width: 650px;
+}
+.download {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(/imgs/backk.png);
+  background-size: cover;
+  height: 80vh;
+}
+.right-av {
+  width: 40%;
+  margin-right: 100px;
+  padding-right: 200px;
+}
+.right-av h2 {
+  padding: 40px 0px 40px 0px;
+  color: #233148;
+  font-size: 35px;
+}
+.right-av p {
+  color: #ffffff;
+  line-height: 35px;
+  padding-bottom: 55px;
+}
+.downloadd {
+  width: 210px;
+  height: 60px;
+  background: #000;
+  float: left;
+  border-radius: 8px;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #535353;
+}
+
+.fa {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+}
+.apple1,
+.apple2 {
+  position: absolute;
+  left: 70px;
+}
+.apple1 {
+  top: 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.apple2 {
+  top: 25px;
+  font-size: 25px;
+}
+.playstore1,
+.playstore2 {
+  position: absolute;
+  left: 55px;
+}
+.playstore1 {
+  top: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.playstore2 {
+  top: 25px;
+  font-size: 25px;
+}
+.apple {
+  margin-right: 50px;
+}
+
+.download .phone {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+}
+.getapp {
+  height: 100vh;
+}
+.uls {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  text-align: start;
+  padding: 50px;
+}
+.uls ul {
+  padding: 80px;
+}
+.uls ul h4 {
+  padding-bottom: 20px;
+  color: #233148;
+}
+.uls ul li {
+  padding-top: 15px;
+  color: #6a6d89;
+}
+
+.gettouch {
+  position: relative;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.getapp-butn {
+  position: relative;
+  width: fit-content;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px 85px 25px 85px;
+  background: linear-gradient(to top, #f6387d 0%, #fe7570 100%);
+}
+.getapp-butn h2 {
+  color: #fff;
+  font-size: 20px;
+}
+.gettouch h1 {
+  color: #233148;
+  padding-top: 300px;
+}
+.gettouch p {
+  color: #6a6d89;
+  padding: 20px;
+}
+.gettouch span {
+  background-color: #40c4fc;
+  color: #000;
+  padding: 20px 35px 20px 35px;
+  border: 1px solid #fff;
+  width: fit-content;
+}
+.btn {
+  display: flex;
+  width: 80%;
+  justify-content: flex-end;
+  margin-left: -130px;
+  padding-top: 100px;
+}
+.btn input {
+  width: 40%;
+  margin-right: 50px;
+  border: none;
+  background-color: #f6f7fb;
+}
+.btn input:focus {
+  outline: none;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #233148;
+  height: 100px;
+}
+.footer span {
+  width: 30%;
+  color: #fff;
+}
+.footer .icons {
+  display: flex;
+  color: #fff;
+  font-size: 30px;
+}
+.footer .icons li {
+  padding: 20px;
+}
